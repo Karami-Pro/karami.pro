@@ -11,7 +11,9 @@
   <style>
     /* Body styles */
     body {
-      background-color: #121212;
+      background: linear-gradient(to right, #f2712c, #eebb46, #f2712c); /* Rotating gradient colors */
+      background-size: 400%;  /* Defines gradient size for animation */
+      animation: rotate 10s linear infinite; /* Animation for gradient rotation */
       color: #fff;
       font-family: 'Space Grotesk', sans-serif;
       display: flex;
@@ -20,6 +22,16 @@
       height: 100vh;
       margin: 0;
       padding: 2rem;
+    }
+
+    /* Animation for rotating gradient */
+    @keyframes rotate {
+      from {
+        background-position: 0%;
+      }
+      to {
+        background-position: 100%;
+      }
     }
 
     /* Text container styles */
@@ -93,20 +105,4 @@
     .dock-item:active .ripple {
       transform: scale(2);
       opacity: 0.5;
-      transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Slower transition for longer press */
-    }
-
-    /* Material icon styles */
-    .material-icon {
-      font-family: 'Material Icons';
-      font-size: 24px;
-      color: #fff;
-    }
-  </style>
-</head>
-<body>
-  <div class="text-container">
-    <h1>Hey, I'm Karami.</h1>
-    <p>I like pasta.</p>
-  </div>
-  <img
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Slower transition for
