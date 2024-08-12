@@ -7,8 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wight@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Body styles */
     body {
       background-color: #121212;
       color: #fff;
@@ -21,6 +22,7 @@
       padding: 2rem;
     }
 
+    /* Text container styles */
     .text-container {
       text-align: left;
     }
@@ -35,11 +37,13 @@
       font-size: 1.5rem;
     }
 
+    /* Image styles */
     img {
       max-width: 300px;
       border-radius: 50%;
     }
 
+    /* Dock styles */
     .dock {
       position: fixed;
       bottom: 20px; /* Adjust position as needed */
@@ -51,6 +55,7 @@
       padding: 10px;
     }
 
+    /* Dock item styles */
     .dock-item {
       width: 40px; /* Adjust width as needed */
       height: 40px;
@@ -65,10 +70,12 @@
       transition: transform 0.2s ease-in-out; /* Add hover effect transition */
     }
 
+    /* Dock item hover effect */
     .dock-item:hover {
       transform: scale(1.1); /* Enlarge on hover */
     }
 
+    /* Ripple styles */
     .ripple {
       position: absolute;
       top: 0;
@@ -76,17 +83,20 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.2); /* Adjust color and opacity */
+      background-color: rgba(255, 51, 153, 0.2); /* Adjust color and opacity */
       transform: scale(0);
       opacity: 0;
       transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     }
 
+    /* Ripple effect on active (click) */
     .dock-item:active .ripple {
       transform: scale(2);
       opacity: 0.5;
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Slower transition for longer press */
     }
 
+    /* Material icon styles */
     .material-icon {
       font-family: 'Material Icons';
       font-size: 24px;
@@ -99,11 +109,4 @@
     <h1>Hey, I'm Karami.</h1>
     <p>I like pasta.</p>
   </div>
-  <img src="your_image.jpg" alt="Karami's Image">
-  <div class="dock">
-    <div class="dock-item">
-      <span class="material-icon">home</span>
-      <div class="ripple"></div>  </div>
-    <div class="dock-item">
-      <span class="material-icon">search</span>
-      <div class="ripple"></div>  
+  <img
