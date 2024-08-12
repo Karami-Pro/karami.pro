@@ -6,10 +6,12 @@
     <title>Karami</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link  
+ href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #121212;
+            background-color:  
+ #121212;
             color: #fff;
             font-family: 'Space Grotesk', sans-serif;
             display: flex;
@@ -18,7 +20,6 @@
             height: 100vh;
             margin: 0;
             padding: 2rem;
-            cursor: none; /* Hide default cursor */
         }
 
         .text-container {
@@ -39,31 +40,6 @@
             max-width: 300px;
             border-radius: 50%;
         }
-
-        .custom-cursor {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 10px;
-            height: 10px;
-            background-color: white;
-            border-radius: 50%;
-            /* Hide the cursor initially */
-            display: none;
-        }
-
-        button {
-            background-color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer; /* Default cursor on button */
-        }
-
-        button:hover .custom-cursor {
-            display: block;
-            background-color: black; /* Change to black on hover */
-        }
     </style>
 </head>
 <body>
@@ -72,9 +48,5 @@
         <p>I like pasta.</p>
     </div>
     <img src="your_image.jpg" alt="Karami's Image">
-
-    <div class="custom-cursor"></div>
-
-    <button>Click Me!</button>
 </body>
 </html>
