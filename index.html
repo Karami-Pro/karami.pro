@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karami</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link  
- href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color:  
- #121212;
+      background-color: #121212;
       color: #fff;
       font-family: 'Space Grotesk', sans-serif;
       display: flex;
@@ -44,23 +41,26 @@
 
     .dock {
       position: fixed;
-      bottom: 0;
-      left: 0;
-      display: flex; /* Arrange dock items horizontally */
-      width: 100%;
-      background-color: #333; /* Dock background color */
-      padding: 1rem;
+      bottom: 20px; /* Adjust position as needed */
+      left: 50%;
+      transform: translateX(-50%); /* Center the dock */
+      display: flex;
+      background-color: #333;
+      border-radius: 10px; /* Rounded corners */
+      padding: 10px;
     }
 
     .dock-item {
-      flex: 1; /* Evenly distribute space between dock items */
-      text-align: center;
-      color: #fff;
-      cursor: pointer; /* Indicate clickable elements */
+      width: 40px; /* Adjust width as needed */
+      height: 40px;
+      background-color: #444;
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
     }
 
-    .dock-item:hover { /* Highlight on hover */
-      background-color: #555;
+    .dock-item:last-child {
+      margin-right: 0;
     }
   </style>
 </head>
@@ -69,10 +69,11 @@
     <h1>Hey, I'm Karami.</h1>
     <p>I like pasta.</p>
   </div>
-  <img src="your_髷.jpg" alt="Karami's Image"> <div class="dock">
-    <div class="dock-item">Home</div>
-    <div class="dock-item">About</div>
-    <div class="dock-item">Contact</div>
+  <img src="your_image.jpg" alt="Karami's Image">
+  <div class="dock">
+    <div class="dock-item"></div>
+    <div class="dock-item"></div>
+    <div class="dock-item"></div>
   </div>
 </body>
 </html>
