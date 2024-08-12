@@ -1,92 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karami</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f5f5f5; /* Light gray background */
-            color: #333; /* Dark text */
-            font-family: 'Roboto', sans-serif;
-            display: flex;
-            min-height: 100vh; /* Ensure full viewport height */
-            margin: 0;
-            padding: 1rem;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-        .content { /* Center content area with some padding */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: calc(100% - 60px); /* Account for dock width */
-            padding: 2rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
+  <title>Karami</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  
+ href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color:  
+ #121212;
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 2rem;
+    }
 
-        .dock { /* Fixed dock on the right */
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 60px;
-            height: 100vh;
-            background-color: #3f51b5; /* Dark blue dock background */
-            color: #fff; /* White text for icons */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .text-container {
+      text-align: left;
+    }
 
-        .dock-item { /* Style for each dock icon */
-            padding: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
-        }
-        
-        .dock-item:hover { /* Lighter background on hover */
-            background-color: #475ebe;
-        }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #ff69b4; /* Light pink */
+    }
 
-        .text-container {
-            text-align: center;
-        }
+    p {
+      font-size: 1.5rem;
+    }
 
-        h1 {
-            font-size: 2rem; /* Smaller heading size */
-            margin-bottom: 1rem;
-            color: #00bcd4; /* Light blue accent color */
-        }
+    img {
+      max-width: 300px;
+      border-radius: 50%;
+    }
 
-        p {
-            font-size: 1.2rem; /* Smaller paragraph size */
-        }
+    .dock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      display: flex; /* Arrange dock items horizontally */
+      width: 100%;
+      background-color: #333; /* Dock background color */
+      padding: 1rem;
+    }
 
-        img {
-            width: 200px; /* Adjust image width */
-            height: 200px; /* Adjust image height */
-            border-radius: 50%;
-        }
-    </style>
+    .dock-item {
+      flex: 1; /* Evenly distribute space between dock items */
+      text-align: center;
+      color: #fff;
+      cursor: pointer; /* Indicate clickable elements */
+    }
+
+    .dock-item:hover { /* Highlight on hover */
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
-    <div class="dock">
-        <div class="dock-item"> 
-            <i class="material-icons">home</i> </div>
-        <div class="dock-item"> 
-            <i class="material-icons">account_box</i> </div>
-    </div>
-    <div class="content">
-        <div class="text-container">
-            <h1>Hey, I'm Karami.</h1>
-            <p>I like pasta.</p>
-        </div>
-        <img src="your_image.jpg" alt="Karami's Image">
-    </div>
+  <div class="text-container">
+    <h1>Hey, I'm Karami.</h1>
+    <p>I like pasta.</p>
+  </div>
+  <img src="your_髷.jpg" alt="Karami's Image"> <div class="dock">
+    <div class="dock-item">Home</div>
+    <div class="dock-item">About</div>
+    <div class="dock-item">Contact</div>
+  </div>
 </body>
 </html>
