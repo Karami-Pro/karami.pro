@@ -61,11 +61,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative; /* Necessary for absolute positioning of ripple */
       transition: transform 0.2s ease-in-out; /* Add hover effect transition */
     }
 
     .dock-item:hover {
       transform: scale(1.1); /* Enlarge on hover */
+    }
+
+    .ripple {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2); /* Adjust color and opacity */
+      transform: scale(0);
+      opacity: 0;
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .dock-item:active .ripple {
+      transform: scale(2);
+      opacity: 0.5;
     }
 
     .material-icon {
@@ -84,13 +103,7 @@
   <div class="dock">
     <div class="dock-item">
       <span class="material-icon">home</span>
-    </div>
+      <div class="ripple"></div>  </div>
     <div class="dock-item">
       <span class="material-icon">search</span>
-    </div>
-    <div class="dock-item">
-      <span class="material-icon">person</span>
-    </div>
-  </div>
-</body>
-</html>
+      <div class="ripple"></div>  
