@@ -13,7 +13,7 @@
             color: #fff;
             font-family: 'Space Grotesk', sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -22,14 +22,22 @@
         h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
+            color: #ff69b4; /* Light pink */
         }
 
         p {
             font-size: 1.5rem;
         }
+
+        img {
+            max-width: 300px;
+            border-radius: 50%;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
+    <img src="your_image.jpg" alt="Karami's Image">
     <h1>Hey, I'm Karami.</h1>
     <p>I like pasta.</p>
 </body>
